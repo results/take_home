@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "9221724a-e651-4011-ae91-d75ab1b924ce",
+		"name": "paytient_takehome",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/transaction/one-time-payment?paymentUUID=ee41d33a-3e83-4d0c-bc33-2bfd2a957a4b&paymentAmount=500.00",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "69b705b7-1a11-48bc-a92b-2354a046c8da",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/transaction/one-time-payment?paymentUUID=ee41d33a-3e83-4d0c-bc33-2bfd2a957a4b&paymentAmount=500.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction",
+						"one-time-payment"
+					],
+					"query": [
+						{
+							"key": "paymentUUID",
+							"value": "ee41d33a-3e83-4d0c-bc33-2bfd2a957a4b"
+						},
+						{
+							"key": "paymentAmount",
+							"value": "500.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
